@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void cabecalho() {
+    printf("\n=========================\n");
+    printf("\tSENAI");
+    printf("\n=========================\n");
+}
+
+void mostrarResultado(int n1) {
+    if (n1 %2 == 0){
+    printf("Par");
+        
+    }
+    else{
+        printf("Impar");
+    }
+}
+
+
+int main() {
+    int numero;
+  
+   
+    
+    cabecalho(); // Chamada da função.
+    printf("Digite o primeiro numero: ");
+    scanf("%d",&numero);
+   
+    cabecalho(); // Chamada da função.
+    mostrarResultado(numero);
+   
+   
+    return 0;
+}
