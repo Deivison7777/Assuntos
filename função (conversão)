@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int resultadoCentimetros(int n1) {
+int centimetros;
+   centimetros =  n1 * 100;
+     
+  
+  return centimetros;
+}
+
+int main() {
+    float numero;
+    float resultado;
+    
+   printf("Digite um numero em metros: ");
+   scanf("%f", &numero);
+    
+    resultado = resultadoCentimetros(numero);
+    
+   printf("\n====CONVERTENDO EM CENTIMENTROS====\n");
+   printf("Resultado: %.2f cm", resultado);
+
+    
+   
+    return 0;
+}
