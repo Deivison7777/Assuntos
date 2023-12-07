@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+float infracaoDez(int produto) {
+float taxa;
+float precofinal;
+    if(produto < 100){
+        taxa = produto * 0.1;
+        precofinal = produto - taxa;
+    }
+    else{
+        taxa = produto * 0.2;
+        precofinal = produto - taxa;
+    }
+    
+  return precofinal;
+}
+
+int main() {
+    float produto;
+    float finale;
+    
+    printf("Informe o preco do produto: ");
+    scanf("%f", &produto);
+    
+    finale = infracaoDez(produto);
+    
+    printf("Resultado: %.2f", finale);
+   
+    return 0;
+}
