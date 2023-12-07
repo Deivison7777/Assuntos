@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int resultadoPar(int n1[]) {
+int i;
+int pares = 0;
+  for (i = 0; i < 6; i++){
+      if (n1[i] %2 == 0){
+          
+          pares++;
+      }
+     
+  }
+  return pares;
+}
+int resultadoImpar(int n1[]) {
+int i;
+int impares = 0;
+  for (i = 0; i < 6; i++){
+      if (n1[i] %2 != 0){
+          
+          impares++;
+      }
+     
+  }
+  return impares;
+}
+   
+
+int main() {
+    int numero[6];
+    int i;
+    int par;
+    int impar;
+    
+   for(i = 0; i < 6; i++)
+   {
+    printf("Digite o %d° numero: ", i+1);
+    scanf("%d",&numero[i]);
+   }
+   
+  par = resultadoPar(numero);
+  impar = resultadoImpar(numero);
+  
+  printf("Quantidade numeros pares: %d \n", par);
+  printf("Quantidade numeros pares: %d \n", impar);
+
+    
+   
+    return 0;
+}
